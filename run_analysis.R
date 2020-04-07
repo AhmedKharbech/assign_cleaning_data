@@ -57,7 +57,7 @@ tidy_dataset<-dcast(melted_data_set,formula = activity_name+subject~variable,mea
 
 #writing the tidy dataset into a txt file
 
-write.table(tidy_dataset,"tidy_dataset.txt")
+write.table(tidy_dataset,"tidy_dataset.txt",row.names=F)
 
 
 
